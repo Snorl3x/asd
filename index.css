@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+/* Starry night*/
+.sky {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('starry-sky.jpeg') no-repeat center center/cover;
+    overflow: hidden;
+  }
+  
+
+/* Stars */
+/*.stars {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    background-size: 3px 3px;
+    animation: twinkle 2s infinite;
+}
+
+/* Shooting Stars */
+.shooting-stars::before,
+.shooting-stars::after {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 2px;
+  height: 50px;
+  background: #ffffff;
+  animation: shoot 5s infinite;
+}
+
+.shooting-stars::after {
+    animation-delay: 2.5s;
+  }
+
+/* Moon */
+.moon {
+    position: absolute;
+    bottom: 20%;
+    right: 20%;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, #fff, #fffc94, #e0c865);
+    border-radius: 50%;
+    box-shadow: 0 0 30px #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moon:hover {
+    box-shadow: 0 0 50px #fff;
+    transform: scale(1.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hidden-message {
+    display: none;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #fffc94;
+}
+  
+.moon:hover .hidden-message {
+    display: block;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animations */
+@keyframes twinkle {
+    0%, 100% {
+      opacity: 0.8;
+    }
+    50% {
+      opacity: 1;
+    }
+}
+  
+@keyframes shoot {
+    0% {
+      transform: translateX(0) translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(800px) translateY(600px);
+      opacity: 0;
+    }
+}
+    
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+ }
+}  

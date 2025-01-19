@@ -77,7 +77,7 @@ body {
     display: none;
     font-size: 1.2rem;
     text-align: center;
-    color: #fffc94;
+    color: #d81c1cea;
 }
   
 .moon:hover .hidden-message {
